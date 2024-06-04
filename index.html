@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>React</title>
+</head>
+<body>
+    <div id="root">
+        
+
+        <h1>Hi React</h1>
+    </div>
+    <!-- this js should be written using JS -->
+    <!-- <script>
+      const heading=  document.createElement("h1");
+      heading.innerHTML="Hello World from JS";
+      const root=document.getElementById("root");  //get the ref of id of div
+
+      root.appendChild(heading);
+    </script> -->
+
+    <!-- oncce we get the cdn link of react from web -->
+    <!-- why 2 files of react? 1st is core of react framework and 2nd one is react dom is react library used to 
+    do dom changes . || react not only works on browsers but also on mobiles -->
+
+
+    <!-- in CDN links of google there are development and production link why only development using -->
+    <!-- cross origin ?? why  -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="App.js">
+  
+</script>
+<!-- does the order of files  matters if we keep App.js above  then  it throws error react is not rendered
+  react lib should be  -->
+</body>
+</html>
