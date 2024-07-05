@@ -2,9 +2,16 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is React by Lekha Pagadala",
+<<<<<<< HEAD
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
+=======
+  
+  "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
     "test": "jest"
   },
   "repository": {
@@ -23,10 +30,16 @@
   },
   "dependencies": {
     "react": "^18.3.1",
+<<<<<<< HEAD
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0"
   },
   "browsersList": [
+=======
+    "react-dom": "^18.3.1"
+  },
+  "browsersList":[
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
     "last 2 versions"
   ]
 }

@@ -1,8 +1,12 @@
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+=======
+import { useState } from "react";
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
 
 //after 1-17 steps done we get error that reslist is not defined bcoz we moved from app.js to seperate
 //component
@@ -39,6 +43,7 @@ const Body=()=>{
 
 //reven more explanation of react hooks in book page 2
 
+<<<<<<< HEAD
 const [listofRestaurants,setListofRestaurants]= useState([]); //resList
 
 //see this when the body component is loadedfor first time it makes an API call and it updates list of restaurants
@@ -59,6 +64,9 @@ const [searchText,setSearchText]=useState("");
 //whenever state variable updates , react triggers a reconciliation cycle (re renders the component)
 console.log("body rendered");
 
+=======
+const [listofRestaurants,setListofRestaurants]= useState(resList);
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
 
      //normal JS variable
 // let listofRestaurantsJS=[    {
@@ -143,6 +151,7 @@ console.log("body rendered");
   
 // }
 // ];
+<<<<<<< HEAD
 //useEffect hook takes 2 arguments with callback fn when we write this inside body component
 //it will render the component as soon as render is done it will call the callback fn 
 // use efect helps to render the component once it fetch the dqata
@@ -219,14 +228,24 @@ const fetchData= async ()=>{
             }}
             > Search</button>
           </div>
+=======
+
+    return (
+      <div className="body">
+        <div className="filter">
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
           <button
             className="filter-btn"
             onClick={() => {
 
                 //this is hooks state variable and filter it
 
+<<<<<<< HEAD
                 const filteredList=listofRestaurants.filter((res)=>res.info.avgRating>4.1);
                 console.log(filteredList);
+=======
+                const filteredList=listofRestaurants.filter(res=>res.avgRating>4.0);
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
                 setListofRestaurants(filteredList);
 
                 //normal way of using js var
@@ -240,6 +259,7 @@ const fetchData= async ()=>{
         </div>
         <div className="res-container">
           {/* <RestaurantCard resData={resList[0]}/> */}
+<<<<<<< HEAD
           {filteredRestaurant.map((restaurant) => (
             //key = {restaurant.id}
             // key = {restaurant.id} resData={restaurant}
@@ -252,6 +272,14 @@ const fetchData= async ()=>{
         </div>  
       </div> 
     );  
+=======
+          {listofRestaurants.map((restaurant) => (
+            <RestaurantCard key={restaurant.id} resData={restaurant} />
+          ))}
+        </div>
+      </div>
+    );
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
 }
 
 export default Body;

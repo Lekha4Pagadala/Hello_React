@@ -2,6 +2,7 @@
 //export from here by keeping export default header and import in app.js 
 
 import { LOGO_URL } from "../utils/constants";
+<<<<<<< HEAD
 import { useState ,useEffect} from "react";
 import { Link } from "react-router-dom";
 
@@ -11,6 +12,10 @@ const Header=()=>{
     // this below use effect for understanding it and in page 4 in book have explanation
     console.log("header");
     useEffect(()=>{console.log("useEffect called")},[btnNameReact]);
+=======
+
+const Header=()=>{
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
     return(
         <div className="header">
             <div className="logo-container">
@@ -18,6 +23,7 @@ const Header=()=>{
             </div>
             <div className="nav-items">
                 <ul>
+<<<<<<< HEAD
                     <li><Link to="/">Home</Link></li>
                     {/* //and this can be direct link by adding anchor tag and add href="/about" or href="/contact" which should not use anchor tag
 // becoz it refreshes whole page we can navigate to these pages without loading whole page we use "link" from react routerdom
@@ -37,6 +43,12 @@ const Header=()=>{
                       btnNameReact==="Login"?  setBtnNameReact("Logout") : setBtnNameReact("Login")}}>
                             {btnNameReact}</button>
 
+=======
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
                 </ul>
             </div>
         </div>

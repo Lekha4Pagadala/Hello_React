@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client"; 
 import Header from "./components/Header";
 import Body from "./components/Body";
+<<<<<<< HEAD
 //below one creates browisng configuration inside app router
 // whatever we had in configuration we have to provide it 
 import { BrowserRouter, createBrowserRouter ,RouterProvider,Outlet} from "react-router-dom";
@@ -21,10 +22,18 @@ import RestaurantMenu from "./components/RestaurantMenu";
 //          {/* if path=/contact */}
 //          <Contact />
 //          {/* <Body/> */}
+=======
+
+
+
+
+
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
 const AppLayout =()=>{
     return(
         <div className="app">
          <Header/>
+<<<<<<< HEAD
         <Outlet />
         </div>
     )
@@ -89,3 +98,12 @@ const root= ReactDOM.createRoot(document.getElementById("root"));
 //router is most recommended by react router itself
 
 root.render(<RouterProvider router={appRouter}/>);
+=======
+         <Body/>
+        </div>
+    )
+}
+const root= ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<AppLayout/>);
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7

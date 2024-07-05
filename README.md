@@ -42,6 +42,7 @@ how did we get when we install node modules we got all these
  - useEffect() - 
 
  generally we see import react from React these are present in nodemodules exported so we can import
+<<<<<<< HEAD
 
 
 # React routing types
@@ -88,3 +89,5 @@ so thats why first in render phase once parent gets rendered and found 2 child i
 
 why it is doing like above ?
 Dom manipulation is very costly so react does this rendering first and render phase will be very fast bcoz it compare using diff algo and updates virtual dom to real dom and it does it very fast but commit phase will take time 
+=======
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7

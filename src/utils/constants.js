@@ -8,4 +8,7 @@ export const CDN_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_los
 
 export const LOGO_URL="https://mir-s3-cdn-cf.behance.net/project_modules/hd/25539c29532269.55f7d6a0a8c71.jpg";
 
+<<<<<<< HEAD
 export const ITEM_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=";
+=======
+>>>>>>> 292f19097f5cbd1c87f40a029a1a1f643d6e6aa7
