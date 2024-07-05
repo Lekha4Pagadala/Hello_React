@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 //after 1-17 steps done we get error that reslist is not defined bcoz we moved from app.js to seperate
 //component
@@ -157,6 +158,9 @@ useEffect(()=>{
     fetchData();
 },[]);
 // const API_URL=;
+//actually below url to bypass the cors issue we have installed cors plugin and enabled it but actually
+//without that we can add https:corsproxy.io/api_url (we had) but in india its not there and tried few more but none is working
+//should see any other way other than plugin
 
 const fetchData= async ()=>{
   const data = await fetch(
@@ -239,7 +243,11 @@ const fetchData= async ()=>{
           {filteredRestaurant.map((restaurant) => (
             //key = {restaurant.id}
             // key = {restaurant.id} resData={restaurant}
-            <RestaurantCard {...restaurant.info} key={restaurant.info?.id} />
+            //by adding below link and in to if we write that for each restaurant card if we click it will open its menu and details
+
+           <Link key={restaurant.info?.id} 
+                  to={"/restaurants/"+restaurant.info?.id}> 
+           <RestaurantCard {...restaurant.info}  /></Link>
           ))}
         </div>  
       </div> 
